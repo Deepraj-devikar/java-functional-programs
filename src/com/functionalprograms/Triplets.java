@@ -30,7 +30,11 @@ public class Triplets {
 		for (int n = 0; n < N; n++) {
 			System.out.print(array[n]+"\t");
 		}
+		System.out.println("");
 		
+		if (N < 3) {
+			System.out.println("number of distinct tripltes is 0");
+		}
 	}
 
 }
