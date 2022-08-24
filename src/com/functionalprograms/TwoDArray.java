@@ -22,6 +22,23 @@ public class TwoDArray {
 		// 2 Dimentional Array Creation
 		int[][] array = new int[M][N];
 		
+		// Read Values for array
+		System.out.println("Enter values to array");
+		for (int m = 0; m < M; m++) {
+			for (int n = 0; n < N; n++) {
+				System.out.print("Enter value for "+m+" * "+n+" : ");
+				array[m][n] = scanner.nextInt();
+			}
+		}
+		
+		// Show Values in Array
+		for (int m = 0; m < M; m++) {
+			for (int n = 0; n < N; n++) {
+				System.out.print(array[m][n]+"\t");
+			}
+			System.out.println("");
+		}
+		
 	}
 
 }
