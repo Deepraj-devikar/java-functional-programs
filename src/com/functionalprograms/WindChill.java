@@ -20,7 +20,8 @@ public class WindChill {
 
 		// temprature t should be less than 50 and wind speed v should be less than 120 and greater than 3
 		if (t < 50 && 3 < v && v < 120) {
-			System.out.println("Will Work");
+			double w = 35.74 + 0.6215 * t + (0.4275 * t - 35.75) * Math.pow(v, 0.16);
+			System.out.println("Wind Chill result is "+w);
 		} else {
 			System.out.println("temprature t should be less than 50 and wind speed v should be in range of 3 and 120");
 		}
