@@ -1,12 +1,9 @@
-package com.functionalprograms;
-
 import java.util.Scanner;
 
 public class WindChill {
 
 	public static void main(String[] args) {
 		System.out.println("Welcome To Wind Chill Program");
-		
 		Scanner scanner = new Scanner(System.in);
 		// INPUT temprature t and wind speed v
 		double t = 0;
@@ -15,7 +12,6 @@ public class WindChill {
 		double v = 0;
 		System.out.print("Enter wind speed v in miles per hour : ");
 		v = scanner.nextDouble();
-		
 		System.out.println("You entered temprature t is "+t+" and wind speed v is "+v);
 
 		// temprature t should be less than 50 and wind speed v should be less than 120 and greater than 3
@@ -25,6 +21,7 @@ public class WindChill {
 		} else {
 			System.out.println("temprature t should be less than 50 and wind speed v should be in range of 3 and 120");
 		}
+		scanner.close();
 	}
 
 }
